@@ -7,8 +7,6 @@ import ContactCard from '../../../components/ContactCard';
 const Contact = () => {
     const { contacts } = useAppSelector(state => state.contact)
 
-    console.log(contacts)
-
     return (
         <div className='my-5 max-w-5xl px-4 md:px-0 mx-auto'>
             <div className='text-center'>

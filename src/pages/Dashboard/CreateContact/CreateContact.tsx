@@ -11,8 +11,8 @@ const CreateContact = () => {
         e.preventDefault()
 
         const form = e.target;
-        const firstName = form.firstName.value;
-        const lastName = form.lastName.value;
+        const firstName: string = form.firstName.value;
+        const lastName: string = form.lastName.value;
 
         const contact = {firstName, lastName, status};
         dispatch(createContact(contact))
@@ -37,7 +37,7 @@ const CreateContact = () => {
                             </label>
                         </div>
                         <div className="md:w-2/3">
-                            <input className="bg-white appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-cyan-500" name='firstName' id="firstName" type="text" placeholder="Enter first name" />
+                            <input className="bg-white appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-cyan-500" name='firstName' id="firstName" type="text" placeholder="Enter first name" required/>
                         </div>
                     </div>
                     <div className="md:flex md:items-center mb-6">
@@ -47,7 +47,7 @@ const CreateContact = () => {
                             </label>
                         </div>
                         <div className="md:w-2/3">
-                            <input className="bg-white appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-cyan-500" name='lastName' id="lastName" type="text" placeholder="Enter last name" />
+                            <input className="bg-white appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-cyan-500" name='lastName' id="lastName" type="text" placeholder="Enter last name" required/>
                         </div>
                     </div>
                     <div className="flex  md:items-center">
@@ -58,11 +58,11 @@ const CreateContact = () => {
                         </div>
                         <div className="md:w-2/3 md:block flex gap-5 justify-between items-center">
                             <div className="flex items-center md:mb-4">
-                                <input onChange={(e) => e.target.checked && setStatus('Active')} id="statusRadio-1" type="radio" value="" name="statusRadio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300" />
+                                <input onChange={(e) => e.target.checked && setStatus('Active')} id="statusRadio-1" type="radio" value="" name="statusRadio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300" required />
                                 <label htmlFor="statusRadio-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Active</label>
                             </div>
                             <div className="flex items-center">
-                                <input onChange={(e) => e.target.checked && setStatus('Inactive')} id="statusRadio-2" type="radio" value="" name="statusRadio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300" />
+                                <input onChange={(e) => e.target.checked && setStatus('Inactive')} id="statusRadio-2" type="radio" value="" name="statusRadio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300" required />
                                 <label htmlFor="statusRadio-2" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Inactive</label>
                             </div>
                         </div>
