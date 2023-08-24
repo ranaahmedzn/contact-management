@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.contact.active{
+.menuItem.active{
     @apply bg-gray-500 bg-opacity-20
 }

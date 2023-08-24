@@ -26,13 +26,13 @@ const Dashboard = () => {
                     <div className="pl-2 pt-5 pr-4">
                         <ul className="space-y-2 dashboard-menu">
                             <li>
-                                <NavLink to='/contact' className="contact hover:bg-gray-500 font-medium hover:bg-opacity-20 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer transition-all duration-300">
+                                <NavLink to='/contact' className="menuItem hover:bg-gray-500 font-medium hover:bg-opacity-20 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer transition-all duration-300">
                                     <FaAngleRight />
                                     <span>Contact</span>
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='/charts-maps' className="hover:bg-gray-500 font-medium hover:bg-opacity-20 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer transition-all duration-300">
+                                <NavLink to='/charts-maps' className="menuItem hover:bg-gray-500 font-medium hover:bg-opacity-20 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer transition-all duration-300">
                                     <FaAngleRight />
                                     <span>Chart and Maps</span>
                                 </NavLink>

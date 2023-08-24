@@ -1,46 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import "./index.css";
-import Dashboard from './layouts/Dashboard';
-import Contact from './pages/Dashboard/Contact/Contact';
-import CreateContact from './pages/Dashboard/CreateContact/CreateContact';
-import EditContact from './pages/Dashboard/EditContact/EditContact';
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Dashboard />,
-    children: [
-      {
-        path: '/contact',
-        element: <Contact />
-      },
-      {
-        path: '/contact/create-contact',
-        element: <CreateContact />
-      },
-      {
-        path: '/contact/edit-contact',
-        element: <EditContact />
-      },
-    ]
-  },
-]);
+import { Provider } from "react-redux";
+import store from './redux/store'
+import router from './routes/Routes';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} /> 
+    </Provider>
   </React.StrictMode>
 );
 
