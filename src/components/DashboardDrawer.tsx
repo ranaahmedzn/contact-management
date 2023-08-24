@@ -15,13 +15,13 @@ const DashboardDrawer = () => {
                 <div className='flex flex-col h-[calc(100%-120px)] justify-between pl-4 pt-6'>
                     <ul>
                         <li>
-                            <NavLink to='/dashboard/contact' className="hover:bg-gray-500 font-medium hover:bg-opacity-20 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer transition-all duration-300">
+                            <NavLink to='/contact' className="contact hover:bg-gray-500 font-medium hover:bg-opacity-20 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer transition-all duration-300">
                                 <FaAngleRight />
                                 <span>Contact</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard/charts-maps' className="hover:bg-gray-500 font-medium hover:bg-opacity-20 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer transition-all duration-300">
+                            <NavLink to='/charts-maps' className="hover:bg-gray-500 font-medium hover:bg-opacity-20 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer transition-all duration-300">
                                 <FaAngleRight />
                                 <span>Chart and Maps</span>
                             </NavLink>

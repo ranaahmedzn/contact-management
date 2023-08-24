@@ -10,11 +10,23 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Dashboard from './layouts/Dashboard';
+import Contact from './pages/Dashboard/Contact/Contact';
+import CreateContact from './pages/Dashboard/CreateContact/CreateContact';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Dashboard />,
+    children: [
+      {
+        path: '/contact',
+        element: <Contact />
+      },
+      {
+        path: '/contact/create-contact',
+        element: <CreateContact />
+      },
+    ]
   },
 ]);
 
