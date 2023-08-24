@@ -38,7 +38,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ contact }) => {
                     Status: {status}
                 </p>
             </div>
-            <div className="p-6 pt-0 flex justify-between">
+            <div className="p-6 pt-0 flex gap-3">
                 <Link to={`/contact/edit-contact/${id}`}>
                     <button
                         className="select-none rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 py-2 px-4 text-center align-middle font-sans text-sm font-semibold text-white shadow-md shadow-cyan-500/20 transition-all hover:shadow-lg hover:shadow-cyan-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -53,7 +53,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ contact }) => {
                     type="button"
                     data-ripple-light="true"
                 >
-                    Delete
+                    Delete Contact
                 </button>
             </div>
         </div>

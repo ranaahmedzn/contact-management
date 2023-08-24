@@ -3,11 +3,13 @@ import Dashboard from "../layouts/Dashboard";
 import Contact from "../pages/Dashboard/Contact/Contact";
 import CreateContact from "../pages/Dashboard/CreateContact/CreateContact";
 import EditContact from "../pages/Dashboard/EditContact/EditContact";
+import ChartsAndMaps from "../pages/Dashboard/ChartsAndMaps/ChartsAndMaps";
+import RedirectRoute from "./RedirectRoute";
 
 const router = createBrowserRouter([
     {
       path: "/",
-      element: <Dashboard />,
+      element: <RedirectRoute><Dashboard /></RedirectRoute>,
       children: [
         {
           path: '/contact',
@@ -23,7 +25,7 @@ const router = createBrowserRouter([
         },
         {
           path: '/charts-maps',
-          element: <h3>Hello bro!! <br /> This is Dashboard charts and maps</h3>
+          element: <ChartsAndMaps />
         },
       ]
     }
