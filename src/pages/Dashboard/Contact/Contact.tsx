@@ -1,8 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import crossImg from '../../../assets/cross.png'
+import { useAppSelector } from '../../../redux/hooks';
 
 const Contact = () => {
+    const {contacts} = useAppSelector(state => state.contact)
+
+    console.log(contacts)
+
     return (
         <div className='my-5'>
             <div className='text-center'>
