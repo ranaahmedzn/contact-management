@@ -70,7 +70,7 @@ const CreateContact = () => {
                 </div>
 
                 <div className='text-center mt-5'>
-                    <button type="submit" className="shadow bg-gradient-to-r from-cyan-500 to-blue-500 focus:shadow-outline focus:outline-none text-white font-semibold py-2 px-4 rounded">
+                    <button type="submit" className="bg-gradient-to-r from-cyan-500 to-blue-500 shadow-md shadow-cyan-500/20 transition-all hover:shadow-lg hover:shadow-cyan-500/40 focus:shadow-outline focus:outline-none text-white font-semibold py-2 px-4 rounded">
                         Save Contact
                     </button>
                 </div>

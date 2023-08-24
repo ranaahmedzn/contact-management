@@ -22,7 +22,7 @@ const Dashboard = () => {
 
             <div className="flex">
                 {/* dashboard sidebar for large devices */}
-                <aside className="hidden md:block sticky top-0 w-72 h-[calc(100vh-75px)] pt-5 px-4 bg-gray-200">
+                <aside className="hidden md:block sticky top-0 w-72 min-h-[calc(100vh-75px)] max-h-screen pt-5 px-4 bg-gray-200">
                     <div className="pl-2 pt-5 pr-4">
                         <ul className="space-y-2 dashboard-menu">
                             <li>
