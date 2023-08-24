@@ -12,6 +12,7 @@ import "./index.css";
 import Dashboard from './layouts/Dashboard';
 import Contact from './pages/Dashboard/Contact/Contact';
 import CreateContact from './pages/Dashboard/CreateContact/CreateContact';
+import EditContact from './pages/Dashboard/EditContact/EditContact';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/contact/create-contact',
         element: <CreateContact />
+      },
+      {
+        path: '/contact/edit-contact',
+        element: <EditContact />
       },
     ]
   },
